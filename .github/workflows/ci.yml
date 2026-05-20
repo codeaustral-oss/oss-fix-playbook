@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate repository shape
+        run: |
+          test -s README.md
+          test -s LICENSE
+          test -s .gitignore
+          test -s PR_TEMPLATE.md
+          test -s CHECKLIST.md
+          test -s examples/scorecard.md
+          test -s examples/issue-to-fix.md

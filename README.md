@@ -1,5 +1,7 @@
 # OSS Fix Playbook
 
+[![CI](https://github.com/codeaustral-oss/oss-fix-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/codeaustral-oss/oss-fix-playbook/actions/workflows/ci.yml)
+
 CodeAustral OSS uses this playbook for small, reviewable open-source fixes.
 
 The goal is simple: help maintainers close scoped issues without creating review noise.
